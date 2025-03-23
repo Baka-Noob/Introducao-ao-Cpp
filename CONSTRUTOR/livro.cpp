@@ -1,12 +1,18 @@
-#include "biblioteca.hpp"
+#include "livro.hpp"
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-// livro(string nome, string autor, int ano);
+// Construtor
+livro::livro(string titulo, string autor, int ano)
+{
+    this->titulo = titulo;
+    this->autor = autor;
+    this->ano = ano;
+}
 
-// Setters
+/*
 void livro::set_titulo(string titulo)
 {
     this->titulo = titulo;
@@ -19,11 +25,18 @@ void livro::set_ano(int ano)
 {
     this->ano = ano;
 }
+*/
 
 // Getters
 string livro::get_titulo()
 {
     return titulo;
 }
-string livro::get_autor() { return autor; }
-int livro::get_ano() { return ano; }
+string livro::get_autor() 
+{ 
+    return autor; 
+}
+int livro::get_ano() 
+{ 
+    return ano; 
+}
